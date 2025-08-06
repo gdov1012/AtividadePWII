@@ -1,25 +1,27 @@
+
+
 function calcular(operacao){
- const n1 = parseFloat(document.getElementById('numero1').value);
- const n2 = parseFloat(document.getElementById('numero2').value);
+ const n1 = getElementById('num1');
+ const n2 = getElementById('num2');
 
  let resultado = 0;
 
  switch (operacao){
     case 'Somar':
-        resultado = numero1 + numero2;
+        resultado = n1 + n2;
         break;
     case 'Subtrair':
-        resultado = numero1 - numero1;
+        resultado = n1 - n1;
         break;
     case 'Multiplicar':
-        resultado = numero1 * numero2;
+        resultado = n1 * n2;
         break;
     case 'Dividir':
-        if (numero2 === 0){
+        if (n2 === 0){
             alert("Nenhum número é divisível por 0!");
             return;
         }    
-        resultado = numero1 / numero2;
+        resultado = n1 / n2;
         break;
  }
  
