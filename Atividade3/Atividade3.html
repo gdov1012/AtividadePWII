@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
+    <script src="Atividade3.js"></script>  
 </head>
 <body>
-   <div class="calculadora">
+  
+    <div class="calculadora">
     <h1>Minha Calculadora</h1>
     <h3>Primeiro Número:</h3>
-     <input type="number" id="num1"> <br>
+     <form name="form3">
+    <input type="number" id="num1"> <br>
       <h3>Segundo Número:</h3>
      <input type="number" id="num2"> <br>
     
@@ -20,12 +23,13 @@
      <input type="button" name="btsub" value="Subtrair" onclick="calcular('Subtrair')">
      <input type="button" name="btdiv" value="Dividir" onclick="calcular('Dividir')"> 
      <input type="button" name="btmult" value="Multiplicar" onclick="calcular('Multiplicar')"> 
-
+       </form>
      <br>
 
-     <p id="resultado">O Resultado é:</p>
-     </div>
-
-    <script src="Atividade3.js"></script>   
+     <p id="resultado">O Resultado eh: 0</p>
+    
+    </div> 
 </body>
 </html>
+
+
