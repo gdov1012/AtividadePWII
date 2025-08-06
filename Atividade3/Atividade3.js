@@ -1,8 +1,8 @@
 
 
 function calcular(operacao){
- const n1 = getElementById('num1');
- const n2 = getElementById('num2');
+ let n1 = Number(document.getElementById('num1').value);
+ let n2 = Number(document.getElementById('num2').value);
 
  let resultado = 0;
 
@@ -11,19 +11,18 @@ function calcular(operacao){
         resultado = n1 + n2;
         break;
     case 'Subtrair':
-        resultado = n1 - n1;
+        resultado = n1 - n2;
         break;
     case 'Multiplicar':
         resultado = n1 * n2;
         break;
     case 'Dividir':
         if (n2 === 0){
-            alert("Nenhum número é divisível por 0!");
+            alert("Nenhum numero eh divisivel por 0!");
             return;
         }    
         resultado = n1 / n2;
         break;
  }
- 
- document.getElementById('resultado').textContent = "O resultado é: " +resultado;
+ document.getElementById('resultado').innerHTML = "O resultado eh " + resultado;
 }
